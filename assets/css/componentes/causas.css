@@ -1,0 +1,160 @@
+.causas {
+
+    padding: 32px 0 64px 0;
+    background-color: var(--verde-claro);
+}
+
+.causas--ativo {
+    align-items: baseline;
+}
+
+
+
+.causas__titulo {
+    text-align: center;
+
+}
+
+.causas__lista {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 16px auto;
+}
+
+
+.causas__lista-item {
+
+    padding: 32px;
+    box-shadow: 0px 10px 20px var(--preto-transparente);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 60%;
+    height: 50%;
+    background-color: var(--branco);
+    margin-bottom: 32px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+
+.causas__lista-item--ativo {
+    transition: 1s;
+    background-image: none;
+    background-color: transparent;
+    box-shadow: none;
+    
+}
+
+.causas__lista-item:hover {
+
+    transition: .5s;
+    transform: scale(1.1);
+}
+
+.causas__lista-item-imagem {
+    width: 75%;
+    border-radius: 8px;
+    margin-bottom: 32px;
+}
+
+.causas__lista-item-titulo {
+    font-weight: var(--negrito);
+    font-size: 22px;
+    text-align: center;
+}
+
+.causas__texto {
+    display: none;
+
+}
+
+.causas__texto--ativo {
+    display: flex;
+    justify-items: start;
+    align-items: flex-end;
+    flex-direction: column;
+    margin: 0 64px;
+    width: 70%;
+    text-align: justify;
+    line-height: 1.5;
+
+
+}
+
+.causas__lista-item-botao {
+    width: 100%;
+}
+
+.causas__botao {
+    border: none;
+    border-radius: 24px;
+    padding: 16px;
+    color: var(--verde);
+    font-size: 24px;
+    font-weight: var(--negrito);
+    cursor: pointer;
+    margin: 24px 0;
+    width: 100%;
+    background-color: var(--branco);
+    transition: 1s;
+}
+
+.causas__botao:hover {
+    transition: 1s;
+    background-color: var(--verde);
+    color: var(--branco);
+}
+
+
+@media screen and (min-width:768px) {
+
+    .causas__lista-item {
+        width: 50%;
+    }
+
+
+}
+
+
+@media screen and (min-width:1024px) {
+
+    .causas {
+        background-image: url(../../img/fotos/plano-de-fundo-causas.jpg);
+        background-size: 100%;
+
+    }
+
+    .causas__lista {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: flex-start;
+        padding: 32px 80px;
+    }
+
+    .causas__lista-item {
+        width: 20%;
+        background-image: url(../../img/textura3.jpg);
+    }
+    
+
+    .causas__lista-item-botao {
+        width: 70%;
+    }
+
+    .causas__botao {
+        width: 100%;
+        padding: 32px;
+
+    }
+
+    .causas__lista-item--ativo {
+        background-image: none;
+
+
+    }
+
+}

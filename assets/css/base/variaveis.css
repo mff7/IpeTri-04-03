@@ -1,0 +1,45 @@
+:root {
+
+    /* --- CORES ---*/
+
+    --azul: rgba(31, 222, 203, 0.97);
+    --azul-claro: rgba(31, 222, 203, 0.50);
+    --azul-claro-transparente: rgba(31, 222, 203, 0.7);
+    --verde: #04D932;
+    --verde-escuro: #009420;
+    --verde-claro: rgba(0, 255, 115, 0.15);
+    --cinza: #555555;
+    --cinza-claro: #EEEEEE;
+    --branco: #FFFFFF;
+    --preto-transparente: rgba(0, 0, 0, 0.5);
+
+
+    /* --- TIPOS DE FONTE ---*/
+
+    --familia-titulo: 'Righteous', cursive;
+    --familia-titulo-secundario: 'Londrina Outline', cursive;
+    --familia-corpo: 'Outfit', sans-serif;
+
+
+    /* --- PESO DA FONTE ---*/
+
+    --negrito: 700;
+
+
+    /* --- TAMANHO DA FONTE ---*/
+
+    --tamanho-logo-mobile: 2rem;
+    --tamanho-logo-desktop: 3rem;
+
+    --tamanho-titulo-principal-mobile: 5rem;
+    --tamanho-titulo-principal-desktop: 7.5rem;
+
+    --tamanho-titulo-secundario: 2.5rem;
+
+    --tamanho-projeto-titulo: 1.5rem;
+    --tamanho-projeto-texto-mobile: .875rem;
+    --tamanho-projeto-texto-desktop: 1.25rem;
+
+    --tamanho-corpo: 1.25rem;
+
+}

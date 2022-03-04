@@ -1,0 +1,179 @@
+.corpo {
+    background-color: rgba(31, 222, 203, 0.50);
+    display: flex;
+    flex-direction: column;
+}
+
+.principal {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.cabecalho__icone {
+    display: flex;
+    justify-content: flex-start;
+    width: 32px;
+    padding: 16px 0 0 16px;
+}
+
+.logo__imagem {
+    width: 128px;
+
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    margin: 0 40px 30px 0;
+}
+
+.logo__titulo {
+    font-family: var(--familia-titulo);
+    color: var(--branco);
+    font-size: 70px;
+    text-shadow: 3px 3px var(--preto-transparente);
+}
+
+.cartao {
+    background-color: var(--cinza-claro);
+    padding: 60px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.valor {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 0 16px 0;
+
+}
+
+.titulo-principal {
+    font-family: 'Londrina Solid', cursive;
+    font-size: 30px;
+    margin-bottom: 16px;
+}
+
+#valor {
+    outline: none;
+    border: none;
+    height: 48px;
+    border-radius: 32px;
+    padding: 0 16px;
+    font-family: var(--familia-titulo);
+    font-size: 16px;
+}
+
+.titulo-secundario {
+    font-family: 'Londrina Solid', cursive;
+    font-size: 24px;
+    margin: 32px 0;
+}
+
+
+
+#valor::placeholder {
+    font-family: 'Righteous', cursive;
+    font-size: 16px;
+    opacity: 70%;
+}
+
+.pagamento__lista-item {
+    font-family: 'Righteous', cursive;
+    font-size: 18px;
+    margin: 16px 0;
+    color: gray;
+}
+
+.informacaoes-checkbox {
+    display: none;
+
+}
+
+
+.label-cartao {
+    margin: 16px 0;
+}
+
+.cartoes {
+    width: 30%;
+    height: 36px;
+    outline: none;
+    border: none;
+    border-radius: 32px;
+    padding: 0 16px;
+    font-family: var(--familia-titulo);
+    font-size: 16px;
+}
+
+.label-cartao {
+    font-family: var(--familia-corpo);
+}
+
+.pix, .boleto{
+    display: none;
+    width: 300px;
+}
+.pagamento-texto {
+    
+    font-size: 14px;
+    margin: 16px;
+}
+
+.link__botao {
+    display: flex;
+    justify-content: center;
+}
+
+.botao {
+    margin-top: 24px;
+    height: 50px;
+    align-self: center;
+    border: none;
+    outline: none;
+    border-radius: 24px;
+    font-family: var(--familia-titulo);
+    font-size: 20px;
+    color: var(--branco);
+    padding: 8px 16px;
+    background-color: var(--verde);
+}
+
+#cartao-credito:checked~.credito {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#cartao-debito:checked~.debito {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#pix:checked~.pix {
+    display: flex;
+    flex-direction: column;
+}
+#boleto:checked~.boleto {
+    display: flex;
+    flex-direction: column;
+}
+
+.rodape {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.rodape__logo {
+    width: 150px;
+    max-width: 25%;
+    padding: 16px;
+    margin: 32px 0 24px 0;
+}

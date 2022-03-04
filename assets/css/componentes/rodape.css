@@ -1,0 +1,37 @@
+.rodape {
+    display: flex;
+    box-sizing: border-box;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    background-color: var(--azul);
+    padding: 16px;
+}
+
+.rodape__titulo {
+    margin: 20px 0 32px 0;
+    font-family: var(--familia-titulo);
+    color: var(--branco);
+    font-size: 24px;
+}
+
+.rodape__empresas-parceiras {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.empresas-parceiras__logo {
+
+    margin: 8px;
+}
+
+@media screen and (min-width:768px) {
+    .rodape__empresas-parceiras {
+
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+}

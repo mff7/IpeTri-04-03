@@ -1,0 +1,71 @@
+.nossos-numeros__lista {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin: 0 24px;
+
+}
+
+.nossos-numeros__lista-item {
+    width: 100%;
+    background-color: var(--branco);
+    box-shadow: 5px 5px 20px var(--preto-transparente);
+    height: 216px;
+    padding: 24px;
+    box-sizing: border-box;
+    margin-top: 24px;
+
+
+}
+
+.nossos-numeros__lista-item-titulo {
+
+    font-family: 'Oswald', sans-serif;
+    font-size: 32px;
+    font-weight: var(--negrito);
+    color: #222;
+
+}
+
+.nossos-numeros__lista-item-imagem {
+    margin-top: 16px;
+    width: 90px;
+}
+
+.nossos-numeros__lista-item-valor {
+    margin-top: 16px;
+    font-family: 'Oswald', sans-serif;
+    color: #222;
+    font-size: 30px;
+    font-weight: var(--negrito);
+
+}
+
+@media screen and (min-width:1024px) {
+    .nossos-numeros__lista {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+    }
+
+    .nossos-numeros__lista-item {
+        width: 32.5%;
+    }
+
+    .nossos-numeros__lista-item-imagem {
+        margin-top: 16px;
+        width: 70px;
+    }
+
+
+    .nossos-numeros__lista-item-valor {
+        margin-top: 16px;
+        font-family: 'Oswald', sans-serif;
+        color: #222;
+        font-size: 40px;
+    }
+}

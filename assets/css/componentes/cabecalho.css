@@ -1,0 +1,50 @@
+/* --- Cabeçalho base --- */
+.cabecalho {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: transparent;
+    padding: 16px;
+    box-sizing: border-box;
+    width: 100%;
+    position: fixed;
+    z-index: 2;
+    transition: 1500ms;
+}
+
+.cabecalho--fixo{
+    transition: 1500ms;
+    position: fixed;
+    background-color: var(--azul);
+
+    
+  }
+
+.cabecalho__icone-menu {
+    cursor: pointer;
+    margin-right: 20px;
+}
+
+.cabecalho__titulo {
+    font-family: var(--familia-titulo);
+    color: var(--branco);
+    font-size: var(--tamanho-logo-mobile);
+    font-weight: var(--negrito);
+    text-shadow: 5px 5px var(--preto-transparente);
+
+}
+
+.cabecalho__logo {
+    height: 48px;
+   
+}
+
+/* --- Cabeçalho usuário --- */
+
+
+@media screen and (min-width:1024px) {
+    .cabecalho__titulo{
+        font-size: var(--tamanho-logo-desktop);
+    }
+    
+}

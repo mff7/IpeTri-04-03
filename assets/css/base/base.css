@@ -1,0 +1,24 @@
+@import url(reset.css);
+@import url(variaveis.css);
+
+body{
+    font-family: var(--familia-corpo);
+    background-color: var(--cinza-claro);
+    font-size: var(--tamanho-corpo);
+    color: var(--cinza);
+    
+}
+.titulo{
+    font-family: 'Londrina Solid', cursive;
+    font-size: 50px;
+    color: var(--verde-escuro);
+    padding: 48px 16px;
+    text-shadow: 1px 1px var(--preto-transparente);
+    /* text-transform: uppercase; */
+}
+
+@media screen and (min-width:1024px) {
+    .titulo{
+        font-size: 60px;
+    }
+}

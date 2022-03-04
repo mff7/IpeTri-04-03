@@ -1,0 +1,32 @@
+.banner__link {
+    display: flex;
+    justify-content: center;
+
+
+
+
+}
+
+.banner__imagem {
+    object-fit: cover;
+    width: 100%;
+    height: 60vh;
+    position: relative;
+}
+
+.banner__titulo {
+    font-family: var(--familia-corpo);
+    font-size: 60px;
+    margin-top: 25vh;
+    font-weight: var(--negrito);
+    color: var(--branco);
+    position: absolute;
+    text-align: center;
+    text-shadow: 5px 5px 5px var(--preto-transparente);
+}
+
+@media screen and (min-width:1024px) {
+    .banner__titulo {
+        font-size: 100px;
+    }
+}

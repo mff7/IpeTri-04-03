@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+    <!--------------------------------- META -------------------------------->
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-------------------------------- FONTES ------------------------------->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Londrina+Outline&family=Londrina+Solid&family=Outfit&family=Righteous&family=Oswald:wght@700&display=swap"
+        rel="stylesheet">
+    <!------------------------ FOLHAS DE ESTILOS CSS ------------------------>
+
+    <link rel="stylesheet" href="./assets/css/doacao.css">
+
+
+    <!-------------------------------- Base --------------------------------->
+
+    <link rel="stylesheet" href="./assets/css/base/base.css">
+
+    <!-------------------------- TÍTULO DO DOCUMENTO ------------------------>
+
+    <link rel="shortcut icon" href="./assets/img/icones/folha.ico">
+    <title>IpêTri | Doação</title>
+</head>
+
+
+
+<body class="corpo">
+    <header class="cabecalho">
+        <a href="./index.html">
+            <img src="./assets/img/icones/seta-volta.png" alt="Seta volta" class="cabecalho__icone">
+        </a>
+    </header>
+    <main class="principal">
+        <section class="logo">
+            <img src="./assets/img/logos/logo.png" alt="Logo" class="logo__imagem">
+            <h1 class="logo__titulo">IpêTri</h1>
+        </section>
+        <section class="cartao">
+            <ul class="pagamento__lista">
+                <div class="valor">
+                    <label for="valor" class="titulo-principal" required>Valor da Doação</label>
+                    <input type="text" name="valor" id="valor" placeholder="R$ 00,00">
+                </div>
+
+                <h2 class="titulo-secundario">Escolha a forma de Pagamento</h2>
+                <li class="pagamento__lista-item">
+                    <input type="checkbox" name="cartao-credito" id="cartao-credito" checked>
+                    <label for="cartao-credito">Cartão de Crédito</label>
+                    <div class="informacaoes-checkbox credito">
+                        <label for="numero" class="label-cartao">Número do cartão de crédito</label>
+                        <input type="text" id="numero" class="cartoes">
+                        <label for="nome" class="label-cartao">Nome do Titular</label>
+                        <input type="text" id="nome" class="cartoes">
+                        <label for="validade" class="label-cartao">Validade</label>
+                        <input type="text" id="validade" class="cartoes">
+                        <label for="codigo" class="label-cartao">Código de segurança</label>
+                        <input type="text" id="codigo" class="cartoes">
+                        <button class="botao">Finalizar pedido</button>
+                    </div>
+                </li>
+                <li class="pagamento__lista-item">
+                    <input type="checkbox" name="pix" id="pix">
+                    <label for="pix">Pix</label>
+                    <div class="pix">
+                        <p class="pagamento-texto">Copie o código Pix na próxima etapa e faça o pagamento na instituição
+                            financeira de sua escolha.
+                            O código tem validade de 13 horas.</p>
+                        <button class="botao">Finalizar pedido</button>
+                    </div>
+                </li>
+                <li class="pagamento__lista-item">
+                    <input type="checkbox" name="cartao-debito" id="cartao-debito">
+                    <label for="cartao-debito">Cartão De Debito</label>
+                    <div class="informacaoes-checkbox debito">
+                        <label for="numero" class="label-cartao">Número do cartão de crédito</label>
+                        <input type="text" id="numero" class="cartoes">
+                        <label for="nome" class="label-cartao">Nome do Titular</label>
+                        <input type="text" id="nome" class="cartoes">
+                        <label for="validade" class="label-cartao">Validade</label>
+                        <input type="text" id="validade" class="cartoes">
+                        <label for="codigo" class="label-cartao">Código de segurança</label>
+                        <input type="text" id="codigo" class="cartoes">
+                        <button class="botao">Finalizar pedido</button>
+                    </div>
+                </li>
+                <li class="pagamento__lista-item">
+                    <input type="checkbox" name="boleto" id="boleto">
+                    <label for="boleto">Boleto Bancario</label>
+                    <div class="boleto">
+                    <p class="pagamento-texto">O prazo para pagamento do boleto é de 1 dia util</p>
+                    <button class="botao">Finalizar pedido</button>
+                </div>
+                </li>
+            </ul>
+        </section>
+    </main>
+    <footer class="rodape">
+        <img src="./assets/img/logos/logo-tribanco.svg" alt="Logo Tribanco" class="rodape__logo">
+        <img src="./assets/img/logos/logo-ipe.svg" alt="Logo Ipê" class="rodape__logo">
+        <img src="./assets/img/logos/logo-tricard.svg" alt="Logo Tribanco" class="rodape__logo">
+    </footer>
+
+</body>
+
+
+</html>

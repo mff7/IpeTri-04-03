@@ -1,0 +1,80 @@
+.banner{
+    display: flex;
+    justify-content: start;
+    align-items: flex-end;
+}
+.banner__titulo-parceria{
+    font-family: var(--familia-corpo);
+    font-size: 60px;
+    padding: 16px;
+    font-weight: var(--negrito);
+    color: var(--branco);
+    position: absolute;
+    text-align:end;
+    text-shadow: 5px 5px 5px var(--preto-transparente);
+}
+
+.principal {
+    background-color: var(--cinza-claro);
+}
+
+.artigo {
+    margin: 0 15% 0 15%;
+}
+
+.artigo__titulo {
+    font-family: 'Londrina Solid', cursive;
+    font-size: 40px;
+    font-weight: var(--negrito);
+    color: var(--verde-escuro);
+    margin: 40px 0;
+    align-self: center;
+    text-align: center;
+    text-shadow: 2px 2px var(--preto-transparente);
+    letter-spacing: 2px;
+}
+
+.artigo__texto {
+    text-indent: 3rem;
+    margin: 16px 0;
+    align-self: center;
+    text-align: justify;
+    line-height: 1.5;
+}
+
+.historico__imagem {
+    object-fit: cover;
+    width: 100%;
+    margin: 16px 0;
+}
+.historico{
+    margin-bottom: 48px;
+}
+
+@media screen and (min-width:1024px) {
+
+    .titulo__post-principal {
+        font-size: 48px
+    }
+
+    .artigo__titulo {
+        font-size: 60px;
+        margin: 80px 0;
+    }
+
+    .historico {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .historico__texto {
+        width: 47%;
+    }
+
+    .historico__imagem {
+        width: 50%;
+    }
+
+
+
+}
